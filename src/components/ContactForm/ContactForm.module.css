@@ -9,9 +9,6 @@
   border-radius: 5px;
 
   @media screen and (min-width: 768px) {
-    width: 500px;
-  }
-  @media screen and (min-width: 1440px) {
     width: 540px;
   }
 }
@@ -23,9 +20,7 @@
   border-radius: 5px;
 
   @media screen and (min-width: 768px) {
-    width: 500px;
-  }
-  @media screen and (min-width: 1440px) {
+    width: 540px;
   }
 }
 
