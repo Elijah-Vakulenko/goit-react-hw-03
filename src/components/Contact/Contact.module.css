@@ -1,0 +1,36 @@
+.contact {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: transparent;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    width: 540px;
+  }
+  @media screen and (min-width: 1440px) {
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.btn {
+  width: 75px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  color: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: orange;
+  padding: 5px;
+}
