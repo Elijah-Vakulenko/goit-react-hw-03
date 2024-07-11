@@ -1,24 +1,15 @@
-import React, { useState } from 'react';
-import s from './ContactList.module.css'
-import Contact from "../Contact/Contact"
-import contacts from '../../contacts.json';
- 
+import React from 'react';
+import s from './ContactList.module.css';
+import Contact from '../Contact/Contact';
 
-
-const ContactList = () => {
-  const [cont, setCont] = useState(contacts);
-
-  const handleDeleteContact = id => {
-    setCont(prev => prev.filter(item => item.id !== id));
-}
-
+const ContactList = ({ contacts, handleDeleteContact }) => {
   return (
-     <ul className={s.list}>
-      {cont.map(item => (
-        <Contact handleDeleteContact={handleDeleteContact} key={item.id} {...item} />
-        ))}
-     </ul>
-  )
-}
+    <ul className={s.list}>
+      {contacts.map(contact => (
+        <Contact handleDeleteContact={handleDeleteContact} key={contact.id} {...contact} />
+      ))}
+    </ul>
+  );
+};
 
-export default ContactList
+export default ContactList;
