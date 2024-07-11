@@ -9,7 +9,7 @@ const ContactList = () => {
   const [cont, setCont] = useState(contacts);
 
   const handleDeleteContact = id => {
-  console.log(id);
+    setCont(prev => prev.filter(item => item.id !== id));
 }
 
   return (
