@@ -1,16 +1,16 @@
 import React from 'react';
  import s from './Contact.module.css'
 
-const Contact = () => {
+const Contact = ({name, number, handleDeleteContact}) => {
   return (
       <div className={s.contact}>
           <div>
             <ul className={s.list}>
-              <li>Name</li>
-              <li>PhoneNumber</li>
+          <li> {name}</li>
+          <li> {number}</li>
             </ul>
       </div>
-      <button className={s.btn} type="button">Delete</button>
+      <button onClick={handleDeleteContact} className={s.btn} type="button">Delete</button>
     </div>
   )
 }
