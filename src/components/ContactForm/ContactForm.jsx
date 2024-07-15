@@ -3,7 +3,7 @@ import s from './ContactForm.module.css';
 
 const ContactForm = ({ newContactName, newContactNumber, setNewContactName, setNewContactNumber, handleAddContact }) => {
   return (
-    <div className={s.form}>
+    <div className={s.wrapper}>
       <label className='label' htmlFor="name">Name</label>
       <input
         value={newContactName}
