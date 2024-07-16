@@ -4,11 +4,11 @@ import { nanoid } from 'nanoid';
 import ContactForm from './ContactForm/ContactForm';
 import SearchBox from './SearchBox/SearchBox';  
 import ContactList from './ContactList/ContactList';
-import contactsData from '../contacts.json';
+import contactsData from '../contacts.json';  //завантажуємо наш початковий набір контактів
 
 const App = () => {
   const [contacts, setContacts] = useState(() => {
-    const savedContacts = JSON.parse(window.localStorage.getItem('contacts'));
+    const savedContacts = JSON.parse(window.localStorage.getItem('contacts')); //викликаємо з локал стореджу наші контакти
     return savedContacts ? savedContacts : contactsData;
   });
 
