@@ -13,7 +13,7 @@ const ContactForm = ({ handleAddContact }) => {
     name: Yup.string()
       .min(3, 'Too short') //задаємо мінімальне значення введеного в поле
       .max(50, 'Too long') //задаємо максимум 50 символів
-      .required('Required'),
+      .required('Required'),//робимо поле обов'язковим для заповнення з відповідним меседжем
     number: Yup.string()
       .min(3, 'Too short')
       .max(50, 'Too long')
