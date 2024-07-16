@@ -20,9 +20,9 @@ const ContactForm = ({ handleAddContact }) => {
       .required('Required')
   });
 
-  const onSubmit = (values, { resetForm }) => {
+  const onSubmit = (values, actions) => {
     handleAddContact(values.name, values.number);
-    resetForm();
+    actions.resetForm();
   };
 
   return (
